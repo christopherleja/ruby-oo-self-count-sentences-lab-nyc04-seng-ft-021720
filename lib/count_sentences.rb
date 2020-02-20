@@ -29,6 +29,6 @@ class String
   def count_sentences
     sentences = self.split(/[?!.]/)
     @count = sentences.delete_if {|sentence| sentence.length < 1}
-    @count
+    @count.length
   end
 end
